@@ -1,0 +1,52 @@
+
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static "./deps/css/style.css" %}"/>
+{% endblock css %}
+
+{% block content %}
+<div class="hauptcontent">
+	<section class="content__products products">
+		<div class="products__items">
+			<div class="products__item">
+				<div class="products__image">
+					<img src="{% static "deps/img/Фоторамки/DSC_3641.JPG" %}"
+						alt="" title="Фоторамка Stay Wild">
+				</div>
+				<div class="products__name">Фоторамка Stay Wild</div>
+				<p class="products__price">400 грн</p>
+				<a href="" class="products__button">Купить</a>
+			</div>
+			<div class="products__item">
+				<div class="products__image">
+					<img src="{% static "deps/img/Фоторамки/DSC_8108.JPG" %}"
+						alt="" title="Фоторамка Home">
+				</div>
+				<div class="products__name">Фоторамка Home</div>
+				<p class="products__price">400 грн</p>
+				<a href="" class="products__button">Купить</a>
+			</div>
+			<div class="products__item">
+				<div class="products__image">
+					<img src="{% static "deps/img/Фоторамки/fotoramka-32231-1-660x660.jpg" %}"
+						alt="" title="Фоторамка">
+				</div>
+				<div class="products__name">Фоторамка</div>
+				<p class="products__price">400 грн</p>
+				<a href="" class="products__button">Купить</a>
+			</div>
+			<div class="products__item">
+				<div class="products__image">
+					<img src="{% static "deps/img/Фоторамки/fotoramka-ovalnaya-32466-1-660x660.jpg" %}"
+						alt="" title="Фоторамка овальная">
+				</div>
+				<div class="products__name">Фоторамка овальная</div>
+				<p class="products__price">400 грн</p>
+				<a href="" class="products__button">Купить</a>
+			</div>
+		</div>
+	</section>
+</div>
+{% endblock content %}

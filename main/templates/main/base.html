@@ -1,0 +1,300 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>{{ title }}</title>
+	{% block css %}{% endblock css %}
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />	
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div>
+				<marquee behavior="scroll" direction="left" bgcolor="#ffcc00">
+					Сайт работает в режиме ограниченой функциональности. Приносим свои извинения за неудобства!
+				</marquee>
+			</div>
+			<div class="logo"></div>
+		</div>
+		<div id="navigation">
+			<ul>
+				<li>
+					<div class="lang"><a href="#">UKR</a></div>
+				</li>
+				<li><a href="https://www.google.com"><img src="{% static ".\deps\img\StartSite\box3.png" %}" class="search" alt="Поиск"></a>
+				</li>
+				<li><a href="https://www.google.com"><img src="{% static ".\deps\img\StartSite\search.png" %}" class="search"
+							alt="Поиск"></a></li>
+				<li><a href="{% url "main:kontaktu" %}">Контакты</a></li>
+				<li><a href="{% url "main:oplataidostavka" %}">Оплата и доставка</a></li>
+				<li><a href="{% url "main:index" %}">О нас</a></li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="menu">
+				<ul class="nav">
+					<li><a href="#">
+							<center>Декор интерьера</center>
+						</a>
+						<ul>
+							<li><a href="{% url "main:svechi" %}">
+									<center>Свечи</center>
+								</a></li>
+							<li><a href="{% url "main:fotoramki" %}">
+									<center>Фоторамки</center>
+								</a></li>
+							<li><a href="{% url "main:vasu" %}">
+									<center>Вазы и кашпо для цветов</center>
+								</a></li>
+							<li><a href="{% url "main:korzinu" %}">
+									<center>Корзины и ящики</center>
+								</a></li>
+							<li><a href="{% url "main:aromadiffuzoru" %}">
+									<center>Аромадиффузоры</center>
+								</a></li>
+						</ul>
+					</li>
+					<li><a href="{% url "main:posuda" %}">
+							<center>Посуда</center>
+						</a>
+						<ul>
+							<li><a href="{% url "main:bokalu" %}">
+									<center>Бокалы и стаканы</center>
+								</a></li>
+							<li><a href="{% url "main:tarelki" %}">
+									<center>Блюда и тарелки</center>
+								</a></li>
+							<li><a href="{% url "main:chashki" %}">
+									<center>Чашки</center>
+								</a></li>
+							<li><a href="{% url "main:naboruchashek" %}">
+									<center>Чайные и кофейные наборы</center>
+								</a></li>
+							<li><a href="{% url "main:sacharnizu" %}">
+									<center>Сахарницы</center>
+								</a></li>
+							<li><a href="{% url "main:medovnizu" %}">
+									<center>Медовницы</center>
+								</a></li>
+							<li><a href="{% url "main:naborudljspezii" %}">
+									<center>Наборы для специй</center>
+								</a></li>
+							<li><a href="{% url "main:rasnoe" %}">
+									<center>Разное</center>
+								</a></li>
+						</ul>
+					</li>
+					<li><a href="{% url "main:zvetu" %}">
+							<center>Цветы</center>
+						</a>
+						<ul>
+							<li><a href="{% url "main:buketu" %}">
+									<center>Букеты</center>
+								</a></li>
+							<li><a href="{% url "main:odinochnuezvetu" %}">
+									<center>Одиночные цветы</center>
+								</a></li>
+							<li><a href="{% url "main:golovkizvetov" %}">
+									<center>Головки цветов</center>
+								</a></li>
+							<li><a href="{% url "main:minibuketu" %}">
+									<center>Мини-букеты</center>
+								</a></li>
+						</ul>
+					</li>
+					<li><a href="{% url "main:zelenidbavki" %}">
+							<center>Зелень и добавки</center>
+						</a>
+						<ul>
+							<li><a href="{% url "main:vetkizeleni" %}">
+									<center>Ветки зелени</center>
+								</a></li>
+							<li><a href="{% url "main:listiki" %}">
+									<center>Листики</center>
+								</a></li>
+							<li><a href="{% url "main:yagodu" %}">
+									<center>Ягоды</center>
+								</a></li>
+							<li><a href="{% url "main:tuchinki" %}">
+									<center>Тычинки</center>
+								</a></li>
+						</ul>
+					</li>
+					<ul>
+						<li><a href="{% url "main:suchozvetu" %}">
+								<center>Сухоцветы и природные материалы</center>
+							</a></li>
+					</ul>
+					</li>
+					<li><a href="{% url "main:dlyatvorchestva" %}">
+							<center>Материалы для творчества</center>
+						</a>
+						<ul>
+							<li><a href="{% url "main:floristika" %}">
+									<center>Флористика</center>
+								</a></li>
+							<li><a href="{% url "main:skrapbuking" %}">
+									<center>Скрапбукинг</center>
+								</a></li>
+							<li><a href="{% url "main:felting" %}">
+									<center>Фелтинг (валяние)</center>
+								</a></li>
+							<li><a href="{% url "main:zagotovki" %}">
+									<center>Заготовки для декорирования</center>
+								</a></li>
+							<li><a href="{% url "main:lentu" %}">
+									<center>Ленты, кружево, тесьма</center>
+								</a></li>
+							<li><a href="{% url "main:businu" %}">
+									<center>Бусины, полубусины</center>
+								</a></li>
+							<li><a href="{% url "main:fetr" %}">
+									<center>Фетр, фоамиран</center>
+								</a></li>
+							<li><a href="{% url "main:drugoe" %}">
+									<center>Другое</center>
+								</a></li>
+						</ul>
+					</li>
+					<li><a href="{% url "main:melkiydekor" %}">
+							<center>Мелкий декор</center>
+						</a>
+						<ul>
+							<li><a href="{% url "main:lipuchli" %}">
+									<center>Липучки</center>
+								</a></li>
+							<li><a href="{% url "main:prishepki" %}">
+									<center>Прищепки</center>
+								</a></li>
+							<li><a href="{% url "main:babochki" %}">
+									<center>Бабочки, птички</center>
+								</a></li>
+							<li><a href="{% url "main:fruktu" %}">
+									<center>Фрукты</center>
+								</a></li>
+							<li><a href="{% url "main:rotangovueshariki" %}">
+									<center>Ротанговые шарики</center>
+								</a></li>
+							<li><a href="{% url "main:perja" %}">
+									<center>Перья</center>
+								</a></li>
+							<li><a href="{% url "main:drugoedekor" %}">
+									<center>Другое</center>
+								</a></li>
+						</ul>
+					</li>
+					<li><a href="{% url "main:korobkipaketu" %}">
+							<center>Подарочные коробки, пакеты, открытки, топперы</center>
+						</a></li>
+
+					<li><a href="{% url "main:sharu" %}">
+							<center>Гелиевые шары</center>
+						</a>
+						<ul>
+							<li><a href="{% url "main:detskie" %}">
+									<center>Детские</center>
+								</a></li>
+							<li><a href="{% url "main:genskie" %}">
+									<center>Женские</center>
+								</a></li>
+							<li><a href="{% url "main:mugskie" %}">
+									<center>Мужские</center>
+								</a></li>
+							<li><a href="{% url "main:navupisku" %}">
+									<center>На выписку</center>
+								</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			{% block content %}{% endblock content %}
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="row">
+			<div class="column">
+				<div class="title">Адрес:</div>
+				<ul>
+					<li>25000, Украина, Кировоград,</li>
+					<li>пер. Центральный 3/1</li>
+					<li>ТЦ "ПЛАЗА" 1-ый этаж</li>
+					<li class="tvw">Тел: +38 066 479-10-58&nbsp;&nbsp;
+						<div class="tvw1"><img src="{% static ".\deps\img\StartSite\telegram.png" %}" alt="Telegram" width="20" height="20">
+						</div>
+						<div class="tvw1"><img src="{% static ".\deps\img\StartSite\viber.png" %}" alt="Viber" width="20" height="20">
+						</div>
+						<div class="tvw1"><img src="{% static ".\deps\img\StartSite\whatsapp.png" %}" alt="Whatsapp" width="20" height="20">
+						</div>
+					</li>
+					<li>Тел: +38 050 623-52-51</li>
+				</ul>
+			</div>
+			<div class="column">
+				<div class="title">Карта сайта:</div>
+				<ul>
+					<li><a href="#">Декор интерьера</a></li>
+					<li><a href="#">Цветы</a></li>
+					<li><a href="#">Зелень и добавки</a></li>
+					<li><a href="#">Сухоцветы и природные материалы</a></li>
+					<li><a href="#">Материалы для творчества</a></li>
+					<li><a href="#">Мелкий декор</a></li>
+					<li><a href="#">Подарочные коробки</a></li>
+					<li><a href="#">Гелиевые шары</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<div class="title">График работы:</div>
+				<ul>
+					<li>Пн-Пт 10:00 - 18:00</li>
+					<li>Сб 10:00 - 17:00</li>
+					<li>Вс 10:00 - 16:00</li>
+				</ul>
+				<div class="title">Мы на карте:</div>
+				<ul>
+					<div class="p5"><a
+							href="https://www.google.de/maps/place/пер.+Центральный,+3,+Кропивницький,+Кіровоградська+область,+Украина,+25000/@48.5080018,32.2644288,17z/data=!3m1!4b1!4m5!3m4!1s0x40d042af61440e4f:0xbde92b98000198ac!8m2!3d48.5080018!4d32.2666175?hl=ru">Маршрут</a>
+					</div>
+				</ul>
+
+			</div>
+			<div class="column">
+				<div class="title">Подписывайтесь на нас:</div>
+				<ul>
+					<li>
+						<div class="p1"><a href="https://www.instagram.com/butterflydecor_kir/">butterflydecor_kir</a>
+						</div>
+					</li>
+					<li>
+						<div class="p2"><a href="https://www.facebook.com/butterflydecor.kr/">Butterfly&nbsp;Decor</a>
+						</div>
+					</li>
+					<li>
+						<div class="p3"><a href="https://www.youtube.com">Butterfly&nbsp;Decor</a>
+						</div>
+					</li>
+				</ul>
+				<div class="title">Методы оплаты:</div>
+				<ul>
+					<li>
+						<div class="p4"></div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</footer>
+	</div>
+	<div class="copyright">
+		<center>D4ub&nbsp;©&nbsp;2024&nbsp;All Rights Reserved</center>
+	</div>
+
+</body>
+
+
+
+
+
+</html>

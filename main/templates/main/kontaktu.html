@@ -1,0 +1,34 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static "./deps/css/style.css" %}"/>
+{% endblock css %}
+
+{% block content %}
+<div class="hauptcontent">
+	<div>
+		<p class="kontaktu">ТЦ "ПЛАЗА" (за горисполкомом), 1й этаж<br>
+			25000, Украина, Кировоград, пер. Центральный 3/1<br><br>
+
+			Тел: +38 066 479-10-58 (Telegram, Whatsapp, Viber)<br>
+			Тел: +38 050 623-52-51<br><br>
+
+			График работы:
+			Пн-Пт 10:00 - 18:00<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сб
+			10:00 - 17:00<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Вс
+			10:00 - 16:00
+		</p>
+	</div>
+	<div>
+	</div>
+	<div class="karta">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.3162581756706!2d32.26442881562702!3d48.5080017792547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d042af61440e4f%3A0xbde92b98000198ac!2z0L_QtdGALiDQptC10L3RgtGA0LDQu9GM0L3Ri9C5LCAzLCDQmtGA0L7Qv9C40LLQvdC40YbRjNC60LjQuSwg0JrRltGA0L7QstC-0LPRgNCw0LTRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDI1MDAw!5e0!3m2!1sru!2sde!4v1660072946914!5m2!1sru!2sde"
+			width="100%" height="930" style="border:1;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</div>
+{% endblock content %}

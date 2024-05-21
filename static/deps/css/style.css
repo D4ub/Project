@@ -1,0 +1,298 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 17px;
+}
+.logo{		
+	margin-top: -5px;
+	height: 120px;
+	width: 100%;
+	background: #000 url('/Flex/logo_psd.png')  center no-repeat;
+	background-size: 300px 100px; 
+}
+.search{
+	width: 25px;
+	padding: 3px;
+}
+.box{
+	width: 30px;
+	padding: 30px;
+}
+/*=============================*/ 
+#navigation{
+    width: 100%;
+    background: #292A2E;	
+}
+#navigation ul li{    
+    float: right;
+    list-style-type: none; /* Убираем маркеры */
+}
+#navigation ul li a{
+    color: #fff;
+    padding: 0 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    display: block;
+    height: 30px;
+	line-height: 30px;
+}
+#navigation ul li a:hover{
+    text-decoration: underline;
+	/*background-color: #ff2200;*/
+}
+/*=============================*/ 
+.menu{
+	margin: 0;
+	min-height: 700px;
+	width: 350px;
+	border: 0px solid #000;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+  ul.nav li {
+    background: #F0F1F3;
+    border: 1px solid #fff;
+    list-style: none;
+    width: 350px;      
+	border-radius: 3px;
+}
+  ul.nav li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    color: #000;
+	
+}
+ul.nav li ul {
+    display: none;	/*скрываем вложенные пункты*/
+}
+.lang{
+	text-decoration: underline;
+}
+
+/*Выпадающее меню*/
+  
+ul.nav li:hover {
+    /* позиционирование вложенных элементов
+     * будет расчитыватьться относительно
+     * родительского элемента
+     */
+    position: relative;
+    background: #e7e8ea;	
+  }
+  ul.nav li:hover > ul {
+    display: block;
+}
+ul.nav li a:hover{
+	color: red;
+}
+  ul.nav li:hover ul{
+    position: absolute;
+    top: -1px;       /*Задаём координаты для вложенных пунктов*/
+    left: 350px; /*меню раскрывается вправо*/
+	z-index: 1;
+  }
+/*=============================*/ 
+.hauptcontent{
+	height: auto;
+	width: 100%;
+	border: 0px solid #000;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.content{
+	flex: 1 1 auto;
+}
+a {
+    text-decoration: none;
+	color: #000;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+li{
+	list-style: none;
+}
+ul{
+	margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+.tvw{
+	display: flex;
+}
+.title{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	font-style: italic;
+}
+.p1{
+	padding: 0 0 0 40px;
+	background: url('/Flex/insta.png') 0px 4px/20px 20px no-repeat;
+}
+.p2{
+	padding: 0 0 0 40px;
+	background: url('/Flex/fb.png') 0px 4px/20px 20px no-repeat;
+}
+.p3{
+	padding: 0 0 0 40px;
+	background: url('/Flex/youtube.png') 0px 4px/20px 20px no-repeat;
+}
+.p4{
+	padding: 40px;
+	background: url('/Flex/visamaestro.png') 0px 0px/100px 37px no-repeat;
+}
+.p5{
+	padding: 0 0 0 40px;
+	background: url('/Flex/map1.png') 0px 0px/30px 30px no-repeat;
+}
+.copyright{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    background-size: auto;
+    background-color: #131A22;
+    line-height: 30px;
+    color: #D3D8DB;
+}
+.footer{
+	background-color: rgb(240, 241, 243);
+	margin: 0;
+	max-width: auto;
+	height: auto;
+	border: 0px solid #000;
+	padding: 10px;
+}
+.row{
+	display: flex;
+}
+.column{
+	
+	flex: 0 1 25%;
+	border: 0px solid #000;
+	padding: 10px;
+	margin: 10px;
+	line-height: 1.8;
+	text-align: left;	
+}
+.paragraf{
+	padding: 0 40px 0 40px;
+	text-align: justify;
+	text-indent: 0px;
+}
+.list{
+	padding-left: 100px;
+}
+/*=============================*/ 
+.gallery {
+}
+.gallery_title {
+}
+.gallery_items {
+	display: grid;
+	gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.gallery_item {
+	
+	padding: 0px 0px 85% 0px;
+	position: relative;
+}
+.gallery_item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media (min-width: 800px) {
+	.gallery_item_big {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+/*=============================*/ 
+.products {
+}
+.products__title {
+}
+.products__items {
+	padding: 15px;
+	display: grid;
+	column-gap: 20px;
+	row-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 1fr; 
+}
+.products__item {
+	padding: 20px;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template: auto 1fr minmax(40px, auto) / 1fr;
+	box-shadow: 0 0 3px #000;
+}
+.products__image {
+	position: relative;
+	padding: 0px 0px 90% 0px;
+	margin: 0px 0px 20px 0px;
+}
+.products__image img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.products__name {
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+}
+.products__button {
+	background-color: darkorange;
+	padding: 0px 40px;
+	color: #000;
+	line-height: 30px;
+	border-radius: 3px;
+	box-shadow: 0 0 5px #000;
+	font-size: 18px;
+	font-weight: 600;
+	justify-self: center;
+}
+.products__button:hover {
+	background-color: rgb(255, 98, 0);
+	padding: 0px 40px;
+	color: #000;
+	line-height: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #000;
+	font-size: 18px;
+	font-weight: 600;
+	justify-self: center;
+}
+.products__price {
+	font-weight: 700;
+	font-size: 24px;
+	justify-self: center;
+	margin: 15px;
+}
+.kontaktu{
+	padding: 20px 0px 0px 50px;
+}
+.karta{
+	padding: 30px;
+}
+

@@ -4,15 +4,47 @@ from django.shortcuts import render
 
 def index(request):
     context: dict[str, str] = {
-        "title": "Home",
-        "content": "Главная страница магазина - Home",
-        "list": ["first", "second"],
-        "dict": {"first": 1},
-        "bool": True,
+        "title": "Butterfly Decor",
     }
 
     return render(request, "main/index.html", context)
 
 
 def about(request):
-    return HttpResponse("About page")
+    context: dict[str, str] = {
+        "title": "About",
+    }
+
+    return render(request, "main/about.html", context)
+
+
+def svechi(request):
+    context: dict[str, str] = {
+        "title": "Svechi",
+    }
+
+    return render(request, "main/svechi.html", context)
+
+
+def fotoramki(request):
+    context: dict[str, str] = {
+        "title": "Fotoramki",
+    }
+
+    return render(request, "main/fotoramki.html", context)
+
+
+def oplataidostavka(request):
+    context: dict[str, str] = {
+        "title": "Oplataidostavka",
+    }
+
+    return render(request, "main/oplataidostavka.html", context)
+
+
+def kontaktu(request):
+    context: dict[str, str] = {
+        "title": "Kontaktu",
+    }
+
+    return render(request, "main/kontaktu.html", context)
