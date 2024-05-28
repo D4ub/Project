@@ -9,116 +9,19 @@
 <div class="hauptcontent">
     <section class="content__products products">
         <div class="products__items">
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\komplekt-krasnyh-svechey-bispol-tsilindr-4h6-sm-4-sht-27366-1-660x660.jpg" %}"
-                        alt="" title="Комплект цилиндрических свечей Bispol">
+            {% for product in goods %}
+                <div class="products__item">
+                    <div class="products__image">
+                        <img src="{% static product.image %}"
+                            alt="" title="{{ product.description }}">
+                    </div>
+                    <div class="products__name">{{ product.name }}</div>
+                    <p class="product_id">id: 00001</p>
+                    <p class="products__price">{{ product.price }} грн</p>
+                    <a href="" class="products__button">Купить</a>
                 </div>
-                <div class="products__name">Комплект цилиндрических свечей Bispol</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\komplekt-krasnyh-svechey-bispol-tsilindr-5h7-9-11-13-sm-4-sht-27378-1-660x660.jpg" %}"
-                        alt="" title="Комплект цилиндрических свечей Bispol">
-                </div>
-                <div class="products__name">Комплект цилиндрических свечей Bispol</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\komplekt-krasnyh-svechey-bispol-tsilindr-5h7-9-11-13-sm-4-sht-27382-1-660x660.jpg" %}"
-                        alt="" title="Комплект цилиндрических свечей Bispol">
-                </div>
-                <div class="products__name">Комплект цилиндрических свечей Bispol</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\komplekt-kremovyh-svechey-bispol-tsilindr-5h7-9-11-13-sm-4-sht-27379-1-660x660.jpg" %}"
-                        alt="" title="Комплект цилиндрических свечей Bispol">
-                </div>
-                <div class="products__name">Комплект цилиндрических свечей Bispol</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\komplekt-serebryanyh-svechey-bispol-tsilindr-4h6-sm-4-sht-27367-1-660x660.jpg" %}"
-                        alt="" title="Комплект цилиндрических свечей Bispol">
-                </div>
-                <div class="products__name">Комплект цилиндрических свечей Bispol</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\komplekt-serebryanyh-svechey-bispol-tsilindr-5h7-9-11-13-sm-4-sht-27380-1-660x660.jpg" %}"
-                        alt="" title="Комплект цилиндрических свечей Bispol">
-                </div>
-                <div class="products__name">Комплект цилиндрических свечей Bispol</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\komplekt-zhemchuzhnyh-svechey-bispol-tsilindr-4h6-sm-4-sht-27368-1-660x660.jpg" %}"
-                        alt="" title="Комплект цилиндрических свечей Bispol">
-                </div>
-                <div class="products__name">Комплект цилиндрических свечей Bispol</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\svecha-aromaticheskaya-bispol-tropicheskiy-ostrov-27399-1-660x660.jpg" %}"
-                        alt="" title="Свеча ароматическая Bispol тропический остров">
-                </div>
-                <div class="products__name">Свеча ароматическая Bispol тропический остров</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\svecha-aromaticheskaya-christmas-sweetness-28764-1-660x660.jpg" %}"
-                        alt="" title="Свеча ароматическая Christmas-Sweetness">
-                </div>
-                <div class="products__name">Свеча ароматическая Christmas-Sweetness</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\svecha-aromaticheskaya-citrus-green-tea-pudding-28775-2-660x660.jpg" %}"
-                        alt="" title="Свеча ароматическая Citrus-Green-Tea-Pudding">
-                </div>
-                <div class="products__name">Свеча ароматическая Citrus-Green-Tea-Pudding</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\svecha-aromaticheskaya-gingerbread-28768-1-660x660.jpg" %}" alt=""
-                        title="Свеча ароматическая Gingerbread">
-                </div>
-                <div class="products__name">Свеча ароматическая Gingerbread</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
-            <div class="products__item">
-                <div class="products__image">
-                    <img src="{% static "deps\img\svechi\svecha-aromaticheskaya-home-sweet-home-joyful-moments-28738-3-660x660.jpg" %}"
-                        alt="" title="Свеча ароматическая Home-sweet-Home">
-                </div>
-                <div class="products__name">Свеча ароматическая Home-sweet-Home</div>
-                <p class="products__price">400 грн</p>
-                <a href="" class="products__button">Купить</a>
-            </div>
+            {% endfor %}
         </div>
     </section>
-</div>           
+</div>
 {% endblock content %}
-
