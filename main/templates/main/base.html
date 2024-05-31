@@ -40,13 +40,13 @@
 							<center>Декор интерьера</center>
 						</a>
 						<ul>
-							{% comment %} {% for category in categories %}
+							{% for category in categories %}
 							<li><a href="{% url "catalog:index" %}">
-								<center>{{ categorie.name }}</center>
+								<center>{{category.name}}</center>
 							</a></li>
-							{% endfor %} {% endcomment %}
+							{% endfor %}
 							
-							 <li><a href="{% url "catalog:index" %}">
+							 {% comment %} <li><a href="{% url "catalog:index" %}">
 									<center>Свечи</center>
 								</a></li> 
 							 <li><a href="{% url "catalog:index" %}">
@@ -60,7 +60,7 @@
 								</a></li>
 							<li><a href="{% url "catalog:index" %}">
 									<center>Аромадиффузоры</center>
-								</a></li> 
+								</a></li>  {% endcomment %}
 						</ul>
 					</li>
 					<li><a href="{% url "main:posuda" %}">
