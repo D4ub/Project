@@ -1,0 +1,16 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1,
+        "fields": {
+            "name": "Комплект цилиндрических свечей Bispol",
+            "slug": "komplekt-cilindricheskih-svechej-bispol",
+            "description": "Комплект цилиндрических свечей Bispol",
+            "image": "",
+            "price": "400.00",
+            "discount": "0.00",
+            "quantity": 1,
+            "category": 1
+        }
+    }
+]
