@@ -12,12 +12,22 @@
             {% for product in goods %}
                 <div class="products__item">
                     <div class="products__image">
-                        <img src="{% static product.image %}"
-                            alt="" title="{{ product.description }}">
+                        {% if product.image  %}
+                        <img src="{{product.image.url}}"
+                            alt="{{ product.name }}" title="{{ product.description }}">
+                        {% else %}
+                        <img src="{% static "deps/img/image-not-found.png" %}" alt="{{ product.name }}" title="{{ product.description }}">
+                        {% endif %}
                     </div>
                     <div class="products__name">{{ product.name }}</div>
-                    <p class="product_id">id: 00001</p>
+                    <p class="product_id">id: {{ product.display_id }}</p>
+                    {% if product.discount %}
+                        <p><s>{{ product.price }}</s>грн</p>
+                        <p><strong>{{ product.sell_price }} грн</strong></p>
+                        <span>Скидка {{ product.discount }} %</span>
+                    {% else %}
                     <p class="products__price">{{ product.price }} грн</p>
+                    {% endif %}
                     <a href="" class="products__button">Купить</a>
                 </div>
             {% endfor %}
