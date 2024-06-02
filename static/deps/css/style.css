@@ -230,6 +230,7 @@ ul{
 	color: gray;
 	font-size: 15px;
 	justify-self: center;
+	margin: 5px 5px;
 }
 .products__title {
 }
@@ -302,5 +303,22 @@ ul{
 }
 
 
-
-
+/* css для иконки скидка */
+.price-container {
+	align-items: center;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	
+	
+}
+.discount {
+	background-color: #ffc60a; 
+	margin-left: 10px; 
+	padding: 2px 5px; 
+	border: 1px solid #000; 
+	border-radius: 5px;
+}
+.price-container s {
+	margin-right: 5px;
+}

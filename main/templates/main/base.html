@@ -1,4 +1,5 @@
 {% load static %}
+{% load goods_tags %}
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -40,6 +41,7 @@
 							<center>Декор интерьера</center>
 						</a>
 						<ul>
+							{% tag_categories as categories %}
 							{% for category in categories %}
 							<li><a href="{% url "catalog:index" %}">
 								<center>{{category.name}}</center>

@@ -19,12 +19,14 @@
                         <img src="{% static "deps/img/image-not-found.png" %}" alt="{{ product.name }}" title="{{ product.description }}">
                         {% endif %}
                     </div>
-                    <div class="products__name">{{ product.name }}</div>
-                    <p class="product_id">id: {{ product.display_id }}</p>
+                    <div class="products__name">{{ product.name }}
+                    <p class="product_id">id: {{ product.display_id }}</p></div>
                     {% if product.discount %}
-                        <p><s>{{ product.price }}</s>грн</p>
-                        <p><strong>{{ product.sell_price }} грн</strong></p>
-                        <span>Скидка {{ product.discount }} %</span>
+                    <div class="price-container">
+                        <p><s>{{ product.price }}</s> грн</p>
+                        <span class="discount">Скидка {{ product.discount }} %</span>
+                    </div>
+                    <p class="products__price">{{ product.sell_price }} грн</p>
                     {% else %}
                     <p class="products__price">{{ product.price }} грн</p>
                     {% endif %}
