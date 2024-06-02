@@ -5,7 +5,7 @@ app_name = "goods"
 
 urlpatterns = [
     path("", views.catalog, name="index"),  # Маршрут ведет в каталог товаров
-    path("product/", views.product, name="product"),  # Марш. вед на стр. конкр. пр.
+    path("product/<slug:product_slug>/", views.product, name="product"),  # Марш. вед на стр. конкр. пр.
 ]
 
 

@@ -30,7 +30,7 @@
                     {% else %}
                     <p class="products__price">{{ product.price }} грн</p>
                     {% endif %}
-                    <a href="" class="products__button">Купить</a>
+                    <a href="{% url "catalog:product" product.slug %}" class="products__button">Купить</a>
                 </div>
             {% endfor %}
         </div>

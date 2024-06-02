@@ -11,11 +11,12 @@
         <div class="products__items">
             <div class="products__item">
                 <div class="products__image">
-                    <img src="{% static "deps\img\svechi\svecha-aromaticheskaya-home-sweet-home-joyful-moments-28738-3-660x660.jpg" %}"
+                    <img src="{{ product.image.url }}"
                         alt="" title="Свеча ароматическая Home-sweet-Home">
                 </div>
-                <div class="products__name">Свеча ароматическая Home-sweet-Home</div>
-                <p class="products__price">400 грн</p>
+                <div class="products__name">{{ product.description }}</div>
+                <p class="product_id">id: {{ product.display_id }}</p>
+                <p class="products__price">{{ product.sell_price }}</p>
                 <a href="" class="products__button">Купить</a>
             </div>
         </div>
