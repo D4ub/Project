@@ -43,7 +43,7 @@
 						<ul>
 							{% tag_categories as categories %}
 							{% for category in categories %}
-							<li><a href="{% url "catalog:index" %}">
+							<li><a href="{% url "catalog:index" category.slug %}">
 								<center>{{category.name}}</center>
 							</a></li>
 							{% endfor %}

@@ -4,7 +4,7 @@ from goods import views
 app_name = "goods"
 
 urlpatterns = [
-    path("", views.catalog, name="index"),  # Маршрут ведет в каталог товаров
+    path("<slug:category_slug>/", views.catalog, name="index"),  # Маршрут ведет в каталог товаров
     path("product/<slug:product_slug>/", views.product, name="product"),  # Марш. вед на стр. конкр. пр.
 ]
 
